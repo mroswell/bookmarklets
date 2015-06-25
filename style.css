@@ -1,1 +1,9 @@
-body {margin:4em;}
+body {
+  margin:4em;
+  font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', Georgia, serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.3999996185303px;
+}
