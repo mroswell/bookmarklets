@@ -4,12 +4,13 @@
 </head>
 <body>
 <h4>Bookmarklet | Map a Congressional Roll Call Vote</h4>
-This bookmarklet enables prettier House and Senate roll call vote view, 
-from <a href="http://thomas.loc.gov/home/rollcallvotes.html"></a>http://thomas.loc.gov/home/rollcallvotes.html</a>, via the New York Times Congress API
+This bookmarklet enables prettier House and Senate roll call vote view.  
 <ul>
 <li>Install the bookmarklet by dragging this link to your browser's bookmark toolbar. (Ensure that the toolbar is showing first.)
 <p><a href="javascript:(function()%7Bif(location.href.indexOf(%22senate%22)%3E-1)%7Bregexp%3Dnew%20RegExp(%27%3D(%5C%5Cd%2B)%26session%3D(%5C%5Cd%2B)%26vote%3D(%5C%5Cd%2B)%27)%3Bvote%3Dlocation.href.match(regexp)%3Bcongressnum%3Dvote%5B1%5D%3Bsession%3Dvote%5B2%5D%2B%27%2F%27%3Bchamber%3D%22%2Fsenate%2F%22%7Delse%7Bregexp%3Dnew%20RegExp(%27http%3A%2F%2Fclerk.(house).gov%2Fevs%2F(%5C%5Cd%7B4%7D)%2Froll(%5C%5Cd%2B).xml%27)%0Avote%3Dlocation.href.match(regexp)%3Bsession%3Dvote%5B2%5D%261%3F%221%2F%22%3A%222%2F%22%0Acongressnum%3DMath.floor((Number(vote%5B2%5D)-1787)%2F%202)%0Achamber%3D%27%2Fhouse%2F%27%7D%0Alocation.href%3D%27http%3A%2F%2Fpolitics.nytimes.com%2Fcongress%2Fvotes%2F%27%2Bcongressnum%2Bchamber%2Bsession%2BparseInt(vote%5B3%5D)%3B%7D)()%3B">MapVote</a>
 </li>
+Start from <a href="http://thomas.loc.gov/home/rollcallvotes.html"></a>http://thomas.loc.gov/home/rollcallvotes.html</a>, and with the press of a button, land on the New York Times Congress API.
+
 <li>Visit a detail page, in the format:
 <blockquote>
 <a href="http://clerk.house.gov/evs/2015/roll374.xml">http://clerk.house.gov/evs/2015/roll374.xml</a>
