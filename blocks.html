@@ -4,7 +4,7 @@
 </head>
 <body>
 This bookmarklet displays a bl.ocks page from a GitHub Gist.
-<ul>
+<ul style="width: 300px">
 <li>Install the bookmarklet by dragging this link to your browser's bookmark toolbar. (Ensure that the toolbar is showing first.)<br />
 <a href="javascript: (function(){regexp=new RegExp('gist.github.com/(.*)/(.*)');gist=location.href.match(regexp);account=gist[1];id=gist[2]+'/';loc='http://bl.ocks.org/'+account+'/'+id;location.href=loc;})();">bl.ocks</a>
 </li>
